@@ -10,7 +10,7 @@ import java.util.Date;
 @Table (name = "company_account")
 public class CompanyAccount {
     @Id
-    @Column (name = "account_name")
+    @Column(name = "account_name", nullable = false, unique = true, length = 300)
     private String accountName;
 
     private String password;
