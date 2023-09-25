@@ -14,7 +14,10 @@ public class User {
     @GeneratedValue
     private Long id;
 
+    @Column(nullable = false, unique = true)
     private String username;
+
+    private String password;
 
     @Column(name = "phone_number")
     private String phoneNumber;
